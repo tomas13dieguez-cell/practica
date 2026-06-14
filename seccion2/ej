@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NUMERO=$1
+
+if [ $((NUMERO % 2)) -eq 0 ]; then
+	echo $NUMERO es PAR
+else
+	echo $NUMERO es IMPAR
+fi
+

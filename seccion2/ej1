@@ -1,0 +1,22 @@
+#!/bin/bash 
+
+read -p "Ingrese ruta a un archivo" ARCHIVO
+
+if [ -e $ARCHIVO ]; THEN 
+	echo "$ARCHIVO existe" 
+fi
+
+if [ -f $ARCHIVO ]; then
+	echo "$ARCHIVO es un archivo regular"
+fi
+
+if [ -r $ARCHIVO ]; then
+	echo "$USER tiene permiso de lectura sobre $ARCHIVO" 
+fi
+if [ -w $ARCHIVO ]; then
+	echo "$USER tiene permisos de escritura sobre $ARCHIVO"
+fi 
+
+if [ -x $ARCHIVO ]; then
+	echo "$USER tiene permiso de ejecucion sobre $ARCHIVO"
+fi

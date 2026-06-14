@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Cantidad de argumentos: $#"
+
+if [ $# -eq  0 ]; then
+	echo "ERROR: No ingresaste ningun parametro"
+	echo "Uso: bash $0 arg[...]"
+	exit 1
+fi
+
